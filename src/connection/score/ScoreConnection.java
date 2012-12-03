@@ -39,8 +39,8 @@ public class ScoreConnection implements ScoreSaver, Serializable {
         String sms = "Ranking Recibido";
         try {
             // Direccion con el Uri del recurso a invocar:
-            servletUrl = new URL("http://localhost:8080/PongUnlimitedEnterprise-war/ScoreServlet");
-            //servletUrl = new URL(host, peticion);
+            //servletUrl = new URL("http://localhost:8080/PongUnlimitedEnterprise-war/ScoreServlet");
+            servletUrl = new URL(host, peticion);
             // Intentamos abrir la conexion
             servletConnection = servletUrl.openConnection();
             System.out.println("Cliente SendScene: Servlet Conectado a URL");
